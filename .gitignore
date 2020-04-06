@@ -1,0 +1,3 @@
+# Files and patterns for git to ignore
+
+.sass_cache/*
