@@ -3,8 +3,13 @@
   padding: 0; }
 
 body {
-  background-size: 100% auto;
   background-repeat: no-repeat; }
+  @media (min-width: 720px) {
+    body {
+      background-size: 100% auto; } }
+  @media (max-width: 720px) {
+    body {
+      background-size: 150% auto; } }
 
 .header {
   position: fixed;
@@ -49,6 +54,16 @@ body {
     font-family: Arial, Helvetica, sans-serif; }
   .content ul {
     padding-left: 30px; }
+  .content table {
+    border-collapse: collapse; }
+  .content th {
+    background-color: lightgray; }
+  .content th, .content td {
+    border: 1px solid black;
+    padding: 5px; }
+
+#funtable {
+  border-style: dotted; }
 
 .first_section {
   display: flow-root;

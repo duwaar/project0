@@ -1,10 +1,19 @@
+$break_width: 720px;
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-size: 100% auto;
+    @media (min-width: $break_width) {
+        background-size: 100% auto;
+    }
+
+    @media  (max-width: $break_width) {
+        background-size: 150% auto;
+    }
+    
     background-repeat: no-repeat;
 }
 
@@ -67,6 +76,23 @@ body {
     ul {
         padding-left: 30px;
     }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    th {
+        background-color: lightgray;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+}
+
+#funtable {
+    border-style: dotted;
 }
 
 .first_section {
