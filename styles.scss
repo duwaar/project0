@@ -9,6 +9,7 @@ $content_highlight: #ffffffe8;
 
 body {
     background-attachment: fixed;
+    background-repeat: no-repeat;
 
     @media (min-width: $break_width) {
         background-size: 100% auto;
@@ -17,8 +18,6 @@ body {
     @media  (max-width: $break_width) {
         background-size: auto 100%;
     }
-    
-    background-repeat: no-repeat;
 }
 
 .header {
@@ -47,16 +46,20 @@ body {
     }
 }
 
-.catchphrase {
-    position: absolute;
-    top: 30%;
-    left: 48%;
+.navbar-nav {
+    flex-direction: row;
 }
 
 .content {
     background-color: $content_bg;
     padding: 20px;
     margin: 20px;
+
+    .catchphrase {
+        position: absolute;
+        top: 30%;
+        left: 48%;
+    }
 
     h3 {
         padding-top: 5px;

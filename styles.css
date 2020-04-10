@@ -33,15 +33,17 @@ body {
   .header a:hover, .header .navbar-light .navbar-nav .nav-link:hover {
     background-color: #ffffffe8; }
 
-.catchphrase {
-  position: absolute;
-  top: 30%;
-  left: 48%; }
+.navbar-nav {
+  flex-direction: row; }
 
 .content {
   background-color: #f0f0f4cb;
   padding: 20px;
   margin: 20px; }
+  .content .catchphrase {
+    position: absolute;
+    top: 30%;
+    left: 48%; }
   .content h3 {
     padding-top: 5px; }
   .content p {
