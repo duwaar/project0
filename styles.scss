@@ -1,4 +1,6 @@
 $break_width: 720px;
+$content_bg: #f0f0f4cb;
+$content_highlight: #ffffffe8;
 
 * {
     margin: 0;
@@ -24,13 +26,13 @@ body {
     flex: row nowrap;
     justify-content: center;
     width: 100vw;
-    border-bottom: 1px solid black;
+    //border-bottom: 1px solid black;
 
     a {
         text-decoration: none;
         text-align: center;
-        color: #000000ff;
-        background-color: #f0f0f4cb;
+        color: black;
+        background-color: $content_bg;
         font-family: "Times New Roman";
         font-size: 16pt;
         padding-top: 25px;
@@ -40,29 +42,24 @@ body {
     }
 
     a:hover {
-        background-color: #ffffffe8;
+        background-color: $content_highlight;
     }
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: $content_highlight;
 }
 
 .catchphrase {
     position: absolute;
     top: 30%;
     left: 48%;
-
-    a {
-        color: #000000ff;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
 }
 
 .content {
-    background-color: #f0f0f4cb;
+    background-color: $content_bg;
     padding: 20px;
-    border: 1px solid black;
+    //border: 1px solid black;
     margin: 20px;
 
     h3 {
@@ -82,11 +79,11 @@ body {
     }
 
     th {
-        background-color: lightgray;
+        background-color: gray;
     }
 
     th, td {
-        border: 1px solid black;
+        //border: 1px solid black;
         padding: 5px;
     }
 }

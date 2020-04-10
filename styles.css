@@ -17,12 +17,11 @@ body {
   display: flex;
   flex: row nowrap;
   justify-content: center;
-  width: 100vw;
-  border-bottom: 1px solid black; }
+  width: 100vw; }
   .header a {
     text-decoration: none;
     text-align: center;
-    color: #000000ff;
+    color: black;
     background-color: #f0f0f4cb;
     font-family: "Times New Roman";
     font-size: 16pt;
@@ -33,20 +32,17 @@ body {
   .header a:hover {
     background-color: #ffffffe8; }
 
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: #ffffffe8; }
+
 .catchphrase {
   position: absolute;
   top: 30%;
   left: 48%; }
-  .catchphrase a {
-    color: #000000ff;
-    text-decoration: none; }
-  .catchphrase a:hover {
-    text-decoration: underline; }
 
 .content {
   background-color: #f0f0f4cb;
   padding: 20px;
-  border: 1px solid black;
   margin: 20px; }
   .content h3 {
     padding-top: 5px; }
@@ -57,9 +53,8 @@ body {
   .content table {
     border-collapse: collapse; }
   .content th {
-    background-color: lightgray; }
+    background-color: gray; }
   .content th, .content td {
-    border: 1px solid black;
     padding: 5px; }
 
 #funtable {
