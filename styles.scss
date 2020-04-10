@@ -8,12 +8,14 @@ $content_highlight: #ffffffe8;
 }
 
 body {
+    background-attachment: fixed;
+
     @media (min-width: $break_width) {
         background-size: 100% auto;
     }
 
     @media  (max-width: $break_width) {
-        background-size: 150% auto;
+        background-size: auto 100%;
     }
     
     background-repeat: no-repeat;
@@ -26,7 +28,6 @@ body {
     flex: row nowrap;
     justify-content: center;
     width: 100vw;
-    //border-bottom: 1px solid black;
 
     a {
         text-decoration: none;
@@ -41,13 +42,9 @@ body {
         width: 100%;
     }
 
-    a:hover {
+    a:hover, .navbar-light .navbar-nav .nav-link:hover {
         background-color: $content_highlight;
     }
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    background-color: $content_highlight;
 }
 
 .catchphrase {
@@ -59,7 +56,6 @@ body {
 .content {
     background-color: $content_bg;
     padding: 20px;
-    //border: 1px solid black;
     margin: 20px;
 
     h3 {
@@ -83,7 +79,6 @@ body {
     }
 
     th, td {
-        //border: 1px solid black;
         padding: 5px;
     }
 }
@@ -94,7 +89,6 @@ body {
 
 .first_section {
     display: flow-root;
-    margin-top: 95px;
 }
 
 .social li {
