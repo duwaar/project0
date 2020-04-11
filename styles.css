@@ -2,6 +2,23 @@
   margin: 0;
   padding: 0; }
 
+.row {
+  background-color: #f0f0f4cb;
+  padding: 20px;
+  margin: 20px; }
+  .row .catchphrase {
+    position: absolute;
+    top: 30%;
+    left: 48%; }
+  .row table {
+    border-collapse: collapse; }
+  .row th {
+    background-color: gray; }
+  .row th, .row td {
+    padding: 5px; }
+  .row li {
+    margin-left: 20px; }
+
 body {
   background-attachment: fixed;
   background-repeat: no-repeat; }
@@ -32,42 +49,10 @@ body {
     width: 100%; }
   .header a:hover, .header .navbar-light .navbar-nav .nav-link:hover {
     background-color: #ffffffe8; }
-
-.navbar-nav {
-  flex-direction: row; }
-
-.content {
-  background-color: #f0f0f4cb;
-  padding: 20px;
-  margin: 20px; }
-  .content .catchphrase {
-    position: absolute;
-    top: 30%;
-    left: 48%; }
-  .content h3 {
-    padding-top: 5px; }
-  .content p {
-    font-family: Arial, Helvetica, sans-serif; }
-  .content ul {
-    padding-left: 30px; }
-  .content table {
-    border-collapse: collapse; }
-  .content th {
-    background-color: gray; }
-  .content th, .content td {
-    padding: 5px; }
+  .header .navbar-nav {
+    flex-direction: row; }
 
 #funtable {
   border-style: dotted; }
-
-.first_section {
-  display: flow-root; }
-
-.social li {
-  float: left;
-  list-style-type: none;
-  background-color: #00000000;
-  padding-top: 10px;
-  padding-right: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
